@@ -1,0 +1,2024 @@
+body{
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: normal;
+  color: #000;
+  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  background-color: #fff;
+  transition: all 1s;
+
+}
+
+
+/* animation ------------*/
+
+a:hover img, a:active img{
+  text-decoration: none;
+	/* opacity: 0.7; */
+}
+
+a:hover i, a:active i{
+  text-decoration: none;
+	/* opacity: 0.7; */
+}
+
+a {
+  text-decoration: none;
+	/* opacity: 0.7; */
+  color: #000;
+}
+
+.brandlogo:hover {
+  opacity: 0.7;
+}
+.brandlogo_top:hover {
+  opacity: 0.7;
+}
+
+.hovercoverl {
+    position: fixed;
+    top: 0px;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
+    background-color: #E7DDCC;
+    /* transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1); */
+    /* transition: all 1s; */
+    transition: transform 0.8s 0s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: -1;
+
+}
+
+.sidemenultext:hover + .hovercoverl{
+  transform: translateX(200px);
+}
+
+.sidemenultext_top:hover + .hovercoverl{
+  transform: translateX(200px);
+}
+
+.hovercoverr {
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    background-color: #E7DDCC;
+    /* transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1); */
+    /* transition: all 1s; */
+    transition: transform 0.8s 0s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: -1;
+
+
+}
+
+.sidemenurtext:hover + .hovercoverr{
+  transform: translateX(-200px);
+}
+
+.sidemenurtext_top:hover + .hovercoverr{
+  transform: translateX(-200px);
+}
+
+.contacttext:hover + .contacthr{
+  transform: translateX(190px);
+}
+
+.contacttext_top:hover + .contacthr_top{
+  transform: translateX(190px);
+}
+/* header ---------------------------------------------*/
+header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  opacity: 1;
+  z-index: 20;
+  display: flex;
+}
+
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    display: none;
+}
+
+.webnav{
+  display: flex;
+  width: 100%;
+  z-index: 100;
+}
+
+.brandlogo{
+  margin-left: 31px;
+  margin-top: 18px;
+  /* z-index: 5; */
+  cursor: pointer;
+  z-index: 1;
+  z-index: 100;
+
+
+}
+
+
+.brandlogo img{
+  height: 40px;
+  width: auto;
+  z-index: 100;
+
+}
+
+.brandlogo_top{
+  margin-left: 31px;
+  margin-top: 18px;
+  /* z-index: 5; */
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+
+}
+
+.brandlogo_top img{
+  height: 40px;
+  width: auto;
+  z-index: 100;
+
+}
+/*
+.brandnamediv{
+  width: 100vw;
+  justify-content: center;
+   position: relative;
+   display: flex;
+   transform: translateX(-20px);
+
+} */
+
+.brandname{
+  width: 100vw;
+  justify-content: center;
+   position: relative;
+   display: flex;
+   transform: translateX(-20px);
+   z-index: 0;
+
+   /* transition: opacity 0.8s 1s cubic-bezier(0.77, 0, 0.175, 1); */
+}
+
+.brandname h1{
+  margin: 18px 0 0;
+  font-family: Vollkorn;
+  font-size: 30px;
+  letter-spacing: 5.63px;
+  transform: translateX(-50px);
+}
+
+.brandname_top{
+  width: 100vw;
+  justify-content: center;
+   position: relative;
+   display: flex;
+   transform: translateX(-20px);
+   /* transition: opacity 0.8s 1s cubic-bezier(0.77, 0, 0.175, 1); */
+   margin-top: -60px;
+}
+
+.brandname_top h1{
+  margin: 18px 0 0;
+  font-family: Vollkorn;
+  font-size: 30px;
+  letter-spacing: 5.63px;
+  transform: translateX(-50px);
+}
+
+.contacthr{
+  transition: transform 0.8s 0s cubic-bezier(0.77, 0, 0.175, 1);
+  position: fixed;
+  right: 190px;
+
+
+
+
+}
+
+.contacthr hr{
+  border: 0.5px solid #000;
+  width: 50px;
+  z-index: 2;
+  position: fixed;
+  margin-top: 39.5px;
+  /* right: 140px; */
+
+}
+
+.contacttext{
+  margin-top: 28px;
+  z-index: 3;
+  /* width: 100%; */
+  position: fixed;
+  right: 34px;
+  cursor: pointer;
+  z-index: 15;
+
+
+}
+
+.contacttext h1{
+  	font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+    /* margin-right: 34px; */
+}
+
+/* contact トップページ */
+.contacthr_top{
+  position: fixed;
+  right: 0px;
+  transition: transform 0.8s 0s cubic-bezier(0.77, 0, 0.175, 1);
+
+
+}
+.contacthr_top hr{
+  border: 0.5px solid #000;
+  width: 50px;
+  z-index: 2;
+  position: fixed;
+  margin-top: 39.5px;
+  /* right: 140px; */
+
+}
+
+.contacttext_top{
+  margin-top: 28px;
+  z-index: 3;
+  /* width: 100%; */
+  position: fixed;
+  /* right: 34px; */
+  cursor: pointer;
+  right: -150px;
+
+}
+
+.contacttext_top h1{
+  	font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+}
+/* サイドメニュー左 */
+
+.sidemenul{
+  display: block;
+}
+
+.sidemenul hr{
+  margin-top: 50vh;
+  border: 0.5px solid #000;
+  width: 25px;
+  z-index: 2;
+  position: fixed;
+}
+
+.sidemenultext{
+  font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 50vh;
+  transform: translateY(-33px);
+  left: 0;
+  z-index: 2;
+  margin-left: 37px;
+  cursor: pointer;
+}
+
+/* サイドメニュー左　トップページ */
+
+.sidemenul_top{
+  display: block;
+}
+
+.sidemenul_top_hr{
+  margin-left: -50px;
+  position: fixed;
+}
+
+.sidemenul_top hr{
+  margin-top: 50vh;
+  border: 0.5px solid #000;
+  width: 25px;
+  z-index: 1;
+  position: fixed;
+}
+
+.sidemenultext_top{
+  font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 50vh;
+  transform: translateY(-33px);
+  left: 0;
+  z-index: 1;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+/* サイドメニュー右 */
+.sidemenur hr{
+  margin-top: 50vh;
+  border: 0.5px solid #000;
+  width: 25px;
+  z-index: 2;
+  position: fixed;
+  right: 0;
+}
+
+
+
+.sidemenurtext{
+  font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  z-index: 1;
+  margin-right: 37px;
+  transform: translateY(-48px);
+  cursor: pointer;
+}
+
+/* サイドメニュー右　トップページ */
+.sidemenur_top{
+  display: block;
+  /* margin-right: 50px; */
+
+}
+
+.sidemenur_top_hr{
+  position: fixed;
+  right: -15px;
+
+}
+
+.sidemenur_top hr{
+  margin-top: 50vh;
+  border: 0.5px solid #000;
+  width: 25px;
+  z-index: 1;
+  position: fixed;
+  /* right: 0px; */
+}
+
+
+.sidemenurtext_top{
+  font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+  writing-mode: vertical-rl;
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  z-index: 1;
+  margin-right: 37px;
+  transform: translateY(-48px);
+  cursor: pointer;
+  margin-right: -20px;
+
+}
+
+/* サイドメニューのアニメーション */
+
+
+/* .bodyfadeout {
+    opacity: 0;
+} */
+
+/* #cover {
+    width: 0;
+    height: 100vh;
+    background-color: #F5F1EA;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+} */
+
+/* #cover2 {
+    width: 0;
+    height: 100vh;
+    background-color: #fff;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+} */
+
+/* .anime1 {
+    animation: animemove1 0.5s ease-in forwards;
+}
+
+@keyframes animemove1 {
+    0% {}
+    50% {width:20vw;}
+    70% {width:40vw;}
+    100% {width: 100vw;}
+}
+
+.anime2 {
+    animation: animemove2 1.4s ease-in forwards;
+}
+
+@keyframes animemove2 {
+    0% {}
+    50% {width:0vw;}
+    80% {width:30vw;}
+    100% {width:170vw;
+    }
+} */
+
+.cover1 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F1EA;
+    z-index: 10;
+    transform: scaleX(0);
+    /* 0が0%、1が100% */
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.cover2 {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    transform: scaleX(0);
+    transition: transform 0.8s 1s cubic-bezier(0.77, 0, 0.175, 1);
+    /* 1sがdelay */
+}
+
+
+.cover1.left-in,
+.cover2.left-in{
+    transform-origin: left center;
+    transform: scaleX(1);
+}
+
+.cover1.right-in,
+.cover2.right-in{
+    transform-origin: right center;
+    transform: scaleX(1);
+}
+
+
+
+
+/* レスポンシブ用ヘッダーのアイコン-------------------*/
+.mobile-menu{
+  display: none;
+  position: absolute;
+  right: 18px;
+  top: 19px;
+  cursor: pointer;
+
+}
+
+.mobile-menu img{
+  width: 19px;
+  height: auto;
+}
+
+.mobile-close{
+  display: none;
+  position: absolute;
+  right: 22px;
+  top: 18px;
+  cursor: pointer;
+}
+
+.mobile-close img{
+  width: 13px;
+  height: auto;
+}
+
+.mobilebrandname{
+  display: none;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.mobilebrandname h1{
+  	font-family: Vollkorn;	font-size: 20px;	letter-spacing: 3.75px;
+}
+
+.mobilebrandname_top{
+  display: none;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.navlogo{
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.navlogo img{
+  width: 19px;
+  height: auto;
+}
+
+/* トップ */
+.navlogo_top{
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+
+.navlogo_top img{
+  width: 19px;
+  height: auto;
+}
+
+
+
+
+/* スマホ用ヘッダー */
+@media (max-width: 767px){
+  .webnav{
+    display: none;
+  }
+
+
+
+  .sidemenur{
+    display: none;
+  }
+
+  .beforeopen{
+    /* display: none; */
+    width: 100%;
+    height: 60px;
+    /* background-color: #FDD007; */
+  }
+
+  .beforeopen_top{
+    display: none;
+    width: 100%;
+    height: 60px;
+    /* background-color: #FDD007; */
+  }
+
+
+  .mobile-menu{
+    display: block;
+    /* top: 25px;
+    right: 18px; */
+  }
+/*
+  .mobile-menu img{
+    width: 19px;
+    height: auto;
+  } */
+
+  .mobilebrandname{
+    display: block;
+  }
+
+  .navlogo{
+    display: block;
+    /* display: none; */
+    /* top: 18px;
+    left: 20px; */
+  }
+
+  /* トップ */
+  .navlogo_top{
+    display: block;
+
+  }
+
+
+  /* .navlogo img{
+    width: 19px;
+    height: auto;
+  } */
+
+  header nav{
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F1EA;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 0s, ease 1s;
+  }
+
+  header nav.mobile-menu-open{
+    transition-delay: 0s;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav .container{
+    width:100%;
+    height: 100vh;
+    margin: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .mobile-close{
+    display: block;
+  }
+
+  header nav ul{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-top: 216px;
+  }
+
+  header nav ul li{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: block;
+    font-family: Montserrat;	font-size: 15px;	letter-spacing: 3px;	line-height: 19px;
+    padding-bottom: 50px;
+  }
+
+  header nav ul li.current a{
+    border-bottom: none;
+  }
+
+  a:hover, a:active{
+    text-decoration: none;
+  	opacity: 0.7;
+  }
+
+  .brandname h1{
+    margin-bottom: 18px;
+  }
+
+  .sidemenul_top{
+    display: none;
+  }
+
+  .sidemenur_top{
+    display: none;
+  }
+
+
+
+
+  .mobilebrandname_top{
+    display: none;
+    text-align: center;
+    /* margin-top: 16px; */
+    margin-top: -25px;
+    /* position: fixed; */
+    width: 100vw;
+    justify-content: center;
+     position: relative;
+     display: flex;
+
+  }
+
+  .mobilebrandname_top h1{
+    	font-family: Vollkorn;	font-size: 20px;	letter-spacing: 3.75px;
+  }
+
+
+
+
+
+
+
+}
+
+
+/* HOME-----------------------------------------------------*/
+
+/* .indexbackground{
+  background-color: #F5F1EA;
+} */
+
+
+
+.video{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 4000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: translate3d(0, -50px, 0); */
+  /* margin:50px 100px 100px 0px; */
+  /* padding:100px 100px 100px 100px; */
+
+}
+
+video{
+  /* width: 100%; */
+  /* width: 300px; */
+  position: absolute;
+}
+
+.scroll{
+  /* margin: 0 auto; */
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  -ms-transform: translateX(-50%);
+  -webkit-transform : translateX(-50%);
+  transform : translateX(-50%);
+}
+
+.scroll p{
+  text-align: center;
+  font-family: Montserrat;	font-size: 14px;	letter-spacing: 3px;
+}
+
+
+
+/* スマホ用index.html----------------------------------- */
+@media (max-width: 767px){
+  .sidemenul{
+    display: none;
+  }
+  .sidemenur{
+    display: none;
+  }
+
+  .video{
+    padding-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: -webkit-box;
+  display: -ms-flexbox; */
+    transform: translateY(-50px);
+  }
+
+  .video video{
+    width: 335px;
+    display: block;
+
+  }
+
+  .scroll p{
+    font-size: 10px;
+    top: calc(50%);
+  }
+}
+
+/* ABOUT------------------------------------------------------ */
+
+.main{
+  /* text-align: center; */
+  position: relative;
+  /* max-width: 100%; */
+  /* height: 640px; */
+  /* max-width: 100vh; */
+
+  margin: 0 auto;
+  /* margin-left: 145px; */
+  /* margin-right: 145px; */
+  text-align: center;
+
+}
+
+/* フェードインアニメーション */
+.mainimg, .copy, .productmain,.contactmain{
+	opacity: 0;
+  transition: 1.2s;
+}
+
+.fade-in{
+	opacity: 1.0;
+}
+
+.mainimg{
+  /* margin-left: 145px;
+  margin-right: 145px;
+  width: 100%; */
+  margin: 0 auto;
+  padding-top: 80px;
+  z-index: -1;
+  margin-left: 145px;
+  margin-right: 145px;
+}
+
+.mainimg img{
+  /* width: 100%; */
+  /* width: 1150px; */
+  /* height: auto; */
+  /* margin: 80px 145px 0px 145px; */
+  /* z-index: 0; */
+  /* margin-left: 145px;
+  margin-right: 145px; */
+  width: 100%;
+
+  /* text-align: center; */
+}
+
+/* .maintextimg{
+  margin: 0 auto;
+} */
+
+/* .maintextimg img{
+  width: 200px;
+  position: absolute;
+  margin-left: -500px;
+  top: 430px;
+  padding: 13px;
+} */
+
+
+.brandconceptbg{
+  width: 800px;
+  height: 450px;
+  background-color: #E7DDCC;
+  position: absolute;
+  z-index: -1;
+  margin-top: 270px;
+  margin-left: 300px;
+  max-width: 1150px;
+}
+
+.brandconcept{
+  margin: 200px auto 0;
+  /* margin-left: 145px; */
+  /* margin-right: 145px; */
+  /* width: 1150px; */
+  max-width: 1150px;
+
+}
+
+
+.brandconcept h4{
+  	font-family: Vollkorn;	font-size: 86px;	letter-spacing: 16.13px;
+}
+
+.brandconceptdiv{
+  display: flex;
+  max-width: 1150px;
+
+}
+
+.brandconceptdiv img{
+  width: 800px;
+  height: 450px;
+  margin-top: 45px;
+}
+
+.brandconceptdivtext{
+  margin-left: 40px;
+}
+
+.brandconceptdivtext h5{
+  font-family: "Hiragino Sans";	font-size: 24px;	letter-spacing: 4.5px;	line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.brandconceptdivtext p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;	line-height: 40px;
+}
+
+.ourphilosophybg{
+  width: 790px;
+  height: 550px;
+  background-color: #F5F1EA;
+  position: absolute;
+  z-index: -1;
+  margin-top: 270px;
+  margin-left: 850px;
+}
+
+.ourphilosophybg2{
+  width: 750px;
+  height: 445px;
+  background-color: #E7DDCC;
+  position: absolute;
+  z-index: -1;
+  margin-top: 660px;
+  margin-left: 280px;
+}
+
+.ourphilosophy{
+  display: flex;
+  margin: 200px auto 0;
+  /* margin-left: 140px;
+  margin-right: 140px; */
+  /* width: 1150px; */
+  max-width: 1150px;
+
+
+}
+
+.ourphilosophyimg1{
+  width: 383px;
+  height: 550px;
+  /* position: relative; */
+}
+
+.ourphilosophyimg1 img{
+  width: 383px;
+  height: auto;
+
+}
+
+.ourphilosophydiv h4{
+	font-family: Vollkorn;	font-size: 86px;	letter-spacing: 16.13px;
+  margin-left: 124px;
+}
+
+.ourphilosophydivright{
+  display: flex;
+}
+
+.ourphilosophydivtext h5{
+  font-family: "Hiragino Sans";	font-size: 24px;	letter-spacing: 4.5px;	line-height: 55px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.ourphilosophydivtext p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;	line-height: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.ourphilosophyimg2 img{
+  width: 383px;
+  height: 550px;
+  margin-top: 180px;
+}
+
+.designstorybg{
+  width: 800px;
+  height: 530px;
+  background-color: #F5F1EA;
+  position: absolute;
+  z-index: -1;
+  margin-top: 275px;
+  margin-left: 570px;
+}
+
+.designstory{
+  margin: 200px auto 0;
+  /* margin-left: 140px;
+  margin-right: 140px; */
+  max-width: 1150px;
+
+}
+
+.designstory h4{
+  font-family: Vollkorn;	font-size: 86px;	letter-spacing: 16.13px;
+}
+
+.designstorydiv{
+  display: flex;
+}
+
+.designstorytext h5{
+  font-family: "Hiragino Sans";	font-size: 24px;	letter-spacing: 4.5px;	line-height: 55px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.designstorytext p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;	line-height: 40px;
+}
+
+.designstoryimg img{
+  width: 800px;
+  height: 533px;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+footer h3{
+  margin-top: 450px;
+  font-family: Montserrat;	font-size: 14px;	font-weight: bold;	letter-spacing: 20px;
+  text-align: center;
+  /* font-weight: 200; */
+}
+
+footer img{
+  width: 100%;
+  height: auto;
+  margin-top: 470px;
+}
+
+footer p{
+  margin: 75px 0 75px;
+  font-family: Montserrat;	font-size: 10px;	letter-spacing: 4.67px;
+  text-align: center;
+  /* font-weight: 100; */
+}
+
+.mainimg_resp{
+  display: none;
+}
+
+.brandconceptimg_resp{
+  display: none;
+}
+
+.brandconceptdivtext_resp{
+  display: none;
+}
+
+.ourphilosophy_resp{
+  display: none;
+}
+
+.designstorytext_resp{
+  display: none;
+}
+
+/* 上移動アニメーション */
+.brandconceptimg, .ourphilosophyimg1, .ourphilosophyimg2,.designstoryimg,.productimg2,.leftimg1,.rightimg3,.rightimg1,.productbg2{
+	transform: translate(0,300px);
+	-webkit-transform: translate(0,300px);
+  transition: all ease 0.8s
+}
+
+.brandconceptbg,.ourphilosophybg2,.ourphilosophybg,.designstorybg,.productbg,.productbg3,.productbg4,.productimg1,.leftimg2,.rightimg2{
+	transform: translate(0,100px);
+	-webkit-transform: translate(0,100px);
+  transition: 1.0s;
+
+}
+
+.moveup{
+	transform: translate(0,0);
+	-webkit-transform: translate(0,0);
+}
+
+/* スマホ用 about.html */
+@media (max-width: 767px){
+  header{
+    height: 60px;
+  }
+
+  /* .mainimg img{
+    margin: 60px auto 0;
+  } */
+
+  .mainimg{
+    display: none;
+  }
+
+  .mainimg_resp{
+    display: block;
+    /* margin: 0 auto; */
+    padding-top: 60px;
+    text-align: center;
+    max-width: 767px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mainimg_resp img{
+    width: 100%;
+    height: auto;
+
+  }
+
+  .maintextimg{
+    display: none;
+  }
+
+  .brandconcept{
+    margin: 100px auto;
+    /* width: 335px; */
+    /* width: 0; */
+    max-width: 767px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .brandconcept h4{
+    font-size: 48px;
+    letter-spacing: 9px;
+  }
+
+  .brandconceptdiv{
+    display: block;
+    width: 100%;
+    /* text-align: center; */
+    /* max-width: 767px; */
+  }
+
+  .brandconceptimg{
+    display: none;
+  }
+
+  .brandconceptimg_resp{
+    display: block;
+    /* padding-top: 60px; */
+    text-align: center;
+    /* max-width: 767px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+
+  .brandconceptimg_resp img{
+    width: 100%;
+    height: auto;
+  }
+
+  .brandconceptdivtext{
+    display: none;
+  }
+
+  .brandconceptdivtext_resp{
+    display: block;
+    margin-top: 25px;
+  }
+
+  .brandconceptdivtext_resp h5{
+    font-family: "Hiragino Sans";	font-size: 18px;	letter-spacing: 3.38px;
+    margin-bottom: 17px;
+  }
+
+  .brandconceptdivtext_resp p{
+    font-family: "Hiragino Sans";	font-size: 12px;	letter-spacing: 2.25px;	line-height: 26px;
+  }
+
+  .ourphilosophy{
+    display: none;
+  }
+
+  .ourphilosophy_resp{
+    max-width: 767px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+  }
+
+  .ourphilosophy_resp h4{
+    	font-family: Vollkorn;	font-size: 48px;	letter-spacing: 9px;
+  }
+
+  .ourphilosophyimg1_resp img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+
+  .ourphilosophydivtext_resp h5{
+    	font-family: "Hiragino Sans";	font-size: 18px;	letter-spacing: 3.38px;
+      margin-top: 25px;
+
+  }
+
+  .ourphilosophydivtext_resp p{
+      font-family: "Hiragino Sans";	font-size: 12px;	letter-spacing: 2.25px;	line-height: 26px;
+      margin-top: 17px;
+  }
+
+  .ourphilosophyimg2_resp img{
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+  }
+
+  .designstory{
+    max-width: 767px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+
+  }
+
+  .designstory h4{
+    font-size: 48px;
+    letter-spacing: 9px;
+  }
+
+  .designstorydiv{
+    flex-direction: column-reverse;
+  }
+
+  .designstorytext{
+    display: none;
+  }
+
+  .designstorytext_resp{
+    display: block;
+  }
+
+  .designstorytext_resp h5{
+    font-family: "Hiragino Sans";font-size: 18px;	letter-spacing: 3.38px;
+    margin-top: 25px;
+    margin-bottom: 17px;
+  }
+
+  .designstorytext_resp p{
+    font-family: "Hiragino Sans";font-size: 12px;	letter-spacing: 2.25px;	line-height: 26px;
+  }
+
+  .designstoryimg img{
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  footer h3{
+    margin-top: 180px;
+    font-size: 10px;	font-weight: bold;	letter-spacing: 8px;
+  }
+
+  footer img{
+    margin-top: 180px;
+  }
+
+  footer p{
+    margin: 30px 0 30px;
+    font-size: 8px;	letter-spacing: 3.33px;
+  }
+
+  .brandconceptbg{
+    width: 350px;
+    height: 190px;
+    margin-top: 215px;
+    margin-left: 0;
+  }
+
+  .ourphilosophybg{
+    width: 300px;
+    height: 220px;
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+
+  .ourphilosophybg2{
+    width: 320px;
+    height: 210px;
+    margin-top: 530px;
+    margin-left: 0;
+  }
+
+  .designstorybg{
+    width: 1000px;
+    height: 420px;
+    margin-left: 130px;
+    margin-top: 170px
+  }
+
+/* 上移動アニメーションストップ */
+   .designstoryimg{
+  	transform: translate(0,0px);
+  	-webkit-transform: translate(0,0px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* PRODUCT------------------------------------------------------ */
+
+
+.productmain{
+  display: flex;
+  width: 1150px;
+  margin: 0 auto 0;
+}
+
+.sliderdiv{
+  margin-right: 160px;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.slider{
+    width: 337px;
+    height: 337px;
+    /* padding: 30px 0; */
+    /* margin-right: 160px; */
+    /* text-align: center; */
+    /* margin: auto; */
+    /* z-index: 1; */
+}
+
+.slick-track{
+    /* height: 300px; */
+    /* width: 700px; */
+    /* margin-right: 500px; */
+}
+
+.slider img{
+  width: 337px;
+  height: 337px;
+}
+
+.fa-long-arrow-alt-left{
+  position: absolute;
+  left: -15px;
+  top: 150px;
+}
+
+.fa-long-arrow-alt-right{
+  position: absolute;
+  left: 340px;
+  top: 150px;
+}
+
+
+.info{
+  padding-top: 190px;
+
+  /* width: 500px; */
+  /* position: relative; */
+  /* margin: 0 auto; */
+}
+
+.info h3{
+	font-family: Vollkorn;	font-size: 30px;	letter-spacing: 5.63px;
+}
+
+.info h4{
+  margin-top: 50px;
+	font-family: Montserrat, "Hiragino Sans";	font-size: 15px;	letter-spacing: 2.81px;
+}
+
+.colour{
+  margin-top: 23px;
+  display: flex;
+}
+
+.colourimg2{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.colour img{
+  width: 30px;
+  height: 30px;
+}
+
+/* アコーディオン */
+.accordion ul {
+	/* width:100%; */
+	/* padding:0; */
+  margin-top: 40px;
+}
+.accordion li {
+	position:relative;
+	/* border-bottom:1px solid #ccc; */
+	list-style:none;
+}
+.accordion li:first-child {
+	/* border-top:1px solid #ccc; */
+}
+
+.accordion > ul > li > a {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	/* padding: 40px 40px; */
+	position: relative;
+}
+
+.toggle{
+  padding: 20px 0 10px;
+}
+
+.accordion > ul > li > a h5:hover {
+	color: #111;
+	text-decoration:none;
+}
+
+.accordion ul li h5 {
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;
+  /* padding-bottom: 40px; */
+  margin-left: 20px;
+
+}
+
+.accordion > ul > li > p {
+	display: none;
+	text-align:left;
+	/* padding-top: 15px; */
+  color: #575757;
+  font-family: "Hiragino Sans";	font-size: 13px;	letter-spacing: 2.63px;	line-height: 24px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+.accordion li .accordion_icon,
+.accordion li .accordion_icon span {
+	display: inline-block;
+	transition: all .3s;
+	box-sizing: border-box;
+}
+.accordion li .accordion_icon {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top:29px;
+	/* right:10px; */
+  left: 0px;
+}
+.accordion li .accordion_icon span {
+	position: absolute;
+    width: 100%;
+	height: 1px;
+    background-color: #000;
+}
+.accordion li .accordion_icon span:nth-of-type(1) {
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.accordion li .accordion_icon span:nth-of-type(2) {
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.accordion li .accordion_icon.active span:nth-of-type(1) {
+	display:none;
+}
+.accordion li .accordion_icon.active span:nth-of-type(2) {
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+
+
+.topimg{
+  margin-top: 210px;
+}
+
+.topimg img{
+  width: 100%;
+  height: auto;
+}
+
+.productinfo{
+  margin: 300px auto 0;
+  /* margin-left: 145px;
+  margin-right: 145px; */
+  width: 1150px;
+  display: flex;
+}
+
+.productimg1 img{
+  width: 383px;
+  height: auto;
+}
+
+.productinfotext{
+  margin: 30px 37px 40px;
+}
+
+.productinfotext h5{
+  font-family: "Hiragino Sans";	font-size: 24px;	letter-spacing: 4.5px;	line-height: 55px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.productinfotext p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;	line-height: 40px;
+}
+
+.productimg2 img{
+  width: 383px;
+  height: auto;
+}
+
+.productinfo2{
+  margin: 300px auto 0;
+  /* margin-left: 145px;
+  margin-right: 145px; */
+  width: 1150px;
+  display: flex;
+}
+
+.productinfotext2{
+  margin-right: 40px;
+}
+
+.productinfo2 h5{
+  font-family: "Hiragino Sans";	font-size: 24px;	letter-spacing: 4.5px;	line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.productinfo2 p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;	line-height: 40px;
+}
+
+.productinfo2 img{
+  width: 575px;
+  height: auto;
+}
+
+.leftimg1{
+  margin-top: 110px;
+}
+
+.leftimg2{
+  margin-top: 210px;
+}
+
+.rightimg2{
+  margin-top: 210px;
+}
+.rightimg3{
+  margin-top: 210px;
+}
+
+/* .productbg{
+  width: 450px;
+  height: 608px;
+  background-color: #E7DDCC;
+  position: absolute;
+  z-index: -1;
+  margin-top: 180px;
+  margin-left: 750px;
+} */
+
+/* .productbg2{
+  width: 730px;
+  height: 485px;
+  background-color: #F5F1EA;
+  position: absolute;
+  z-index: -2;
+  margin-top: 500px;
+  margin-left: 250px;
+} */
+
+
+
+.productbg, .productbg2{
+  display: none;
+}
+
+
+.productbg3{
+  width: 849px;
+  height: 452px;
+  background-color: #F5F1EA;
+  position: absolute;
+  z-index: -1;
+  margin-top: 377px;
+  margin-left: 590px;
+}
+
+.productbg4{
+  width: 555px;
+  height: 687px;
+  background-color: #E7DDCC;
+  position: absolute;
+  z-index: -1;
+  margin-top: 1170px;
+  margin-left: 300px;
+}
+
+.productinfo_resp{
+  display: none;
+}
+
+.productinfo2_resp{
+  display: none;
+}
+
+/* スマホ用 product.html------------------------------------------ */
+@media (max-width: 767px){
+  header{
+    height: 60px;
+  }
+
+  .sidemenul{
+    display: none;
+  }
+
+  .productmain{
+    display: block;
+    max-width: 335px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 0 auto;
+
+  }
+
+  .sliderdiv{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 190px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 140px;
+  }
+
+  .slider{
+
+    width: 190px;
+    height: 190px;
+  }
+
+  .slider img{
+    width: 190px;
+    height: 190px;
+  }
+
+  .fa-long-arrow-alt-left{
+    left: -18px;
+    top: 80px;
+  }
+
+  .fa-long-arrow-alt-right{
+    left: 195px;
+    top: 80px;
+  }
+
+  .info{
+    margin-top: 140px;
+    /* padding-top: 120px; */
+    transform: translateX(70px);
+    padding-top: 0px;
+
+  }
+
+  .info h3{
+    font-size: 25px;	letter-spacing: 4.69px;
+  }
+
+  .info h4{
+  	font-size: 14px;	letter-spacing: 2.63px;
+    margin-top: 35px;
+  }
+
+  .accordion ul{
+    margin-top: 35px;
+  }
+
+  .accordion ul li h5 {
+    font-size: 12px;	letter-spacing: 2.25px;
+    /* margin-left: 20px; */
+
+  }
+
+  .accordion > ul > li > p {
+    font-size: 12px;	letter-spacing: 2.25px;
+    padding-bottom: 10px;
+    /* margin-left: 20px; */
+  }
+
+  .topimg{
+    margin-top: 90px;
+  }
+
+  .productinfo{
+    display: none;
+  }
+
+  .productinfo_resp{
+    display: block;
+    margin: 120px auto 0;
+    max-width: 767px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .productimg1_resp img{
+    width: 100%;
+    height: auto;
+  }
+
+  .productinfotext_resp{
+    margin: 25px 0 25px;
+  }
+
+  .productinfotext_resp h5{
+  	font-family: "Hiragino Sans";	font-size: 18px;	letter-spacing: 3.38px;	line-height: 30px;
+    margin-bottom: 18px;
+    /* margin-top: 60px; */
+  }
+
+  .productinfotext_resp p{
+    font-family: "Hiragino Sans";	font-size: 12px;	letter-spacing: 2.25px;	line-height: 26px;
+  }
+
+  .productimg2_resp img{
+    width: 100%;
+    height: auto;
+  }
+
+  .productinfo2{
+    display: none;
+  }
+
+
+  .productinfo2_resp{
+    display: block;
+    margin: 120px auto 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 767px;
+  }
+
+  /* .productinfotext2_resp{
+    margin-right: 40px;
+  } */
+
+  .productinfo2_resp h5{
+    font-family: "Hiragino Sans";	font-size: 18px;	letter-spacing: 3.38px;
+    margin-bottom: 18px;
+  }
+
+  .productinfo2_resp p{
+    font-family: "Hiragino Sans";	font-size: 12px;	letter-spacing: 2.25px;	line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  .productinfo2_resp img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  .productbg{
+    width: 450px;
+    height: 608px;
+    background-color: #E7DDCC;
+    position: absolute;
+    z-index: -1;
+    margin-left: 100px;
+    margin-top: 80px;
+    height: 200px;
+    display: block;
+  }
+
+  .productbg2{
+    width: 350px;
+    height: 280px;
+    /* margin-right: 200px; */
+    margin-top: 580px;
+    background-color: #F5F1EA;
+    position: absolute;
+    z-index: -2;
+    margin-left: 0px;
+    display: block;
+
+  }
+
+
+  .productbg3{
+    margin-left: 100px;
+    height: 400px;
+  }
+
+  .productbg4{
+    width: 300px;
+    height: 500px;
+    margin-top: 1280px;
+    margin-left: 0px;
+  }
+
+
+
+
+}
+
+
+
+/* contact--------------------------------------------------------- */
+
+.contactmain{
+  /* width: 1150px; */
+  margin: 0 auto;
+  padding-top: 80px;
+  z-index: -1;
+  margin-left: 145px;
+  margin-right: 145px;
+}
+
+.maintitle img{
+  width: 100%;
+}
+
+
+/* .mainbg{
+  width: 1150px;
+  height: 640px;
+  background-color: #E7DDCC;
+  z-index: -1;
+
+} */
+
+.maintext1{
+  /* margin: 0 auto; */
+  position: absolute;
+  z-index: 1;
+  margin-top: 160px;
+  /* transform: translateX(215px); */
+  width: 1150px;
+}
+
+.maintext1 h4{
+  text-align: center;
+	font-family: Montserrat;	font-size: 14px;	font-weight: bold;	letter-spacing: 5.6px;
+}
+
+
+
+.maintext2{
+  position: absolute;
+  z-index: 1;
+  /* margin-top: 200px; */
+  width: 1150px;
+  margin: 200px auto 0;
+
+
+}
+
+.maintext2 h3{
+  font-family: Vollkorn;	font-size: 80px;	letter-spacing: 9.3px;	line-height: 111px;
+  text-align: center;
+}
+
+.formdiv{
+  margin: 200px auto 0;
+  width: 530px;
+}
+
+.name{
+  display: flex;
+  text-align: left;
+  /* height: 15px; */
+
+}
+
+
+
+.title p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;
+}
+
+.must{
+  background-color: #000;
+  width: 45px;
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 3px;
+  /* margin: auto; */
+
+}
+
+.must p{
+  color: #FFFFFF;	font-family: "Hiragino Sans";	font-size: 12px;	letter-spacing: 2.25px;
+  /* line-height: 18px; */
+  text-align: center;
+  margin-top: -1.5px;
+}
+
+.form{
+  margin-top: 9px;
+  height: 41px;	width: 531px;	border: 1px solid #979797;	border-radius: 2px;	background-color: #F0F0F0;
+  margin-bottom: 50px;
+}
+
+.form2{
+  margin-top: 9px;
+  height: 200px;	width: 531px;	border: 1px solid #979797;	border-radius: 2px;	background-color: #F0F0F0;
+  margin-bottom: 50px;
+}
+
+.sendbutton{
+  margin-top: 73px;
+  height: 41px;	width: 531px;	border: 1px solid #979797;	border-radius: 2px;	background-color: #fff;
+  /* margin: auto; */
+}
+
+.sendbutton p{
+  font-family: "Hiragino Sans";	font-size: 14px;	letter-spacing: 2.63px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+.contactmain_resp{
+  display: none;
+}
+
+/* スマホ用contact.html------------------------------------- */
+@media (max-width: 767px){
+  header{
+    height: 60px;
+  }
+
+  /* .contactmain{
+    max-width: 767px;
+    padding-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mainbg{
+    margin: 0 auto;
+    width: 335px;
+    height: 180px;
+
+  }
+
+  .maintext1{
+
+  } */
+
+  .contactmain{
+    display: none;
+  }
+
+  .contactmain_resp{
+    display: block;
+    text-align: center;
+    max-width: 767px;
+    padding-top: 60px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .contactmain_resp img{
+    width: 100%;
+    height: auto;
+  }
+
+  .formdiv{
+    margin: 100px auto 0;
+    /* max-width: 767px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    width: 335px;
+  }
+
+
+
+  .title p{
+    font-size: 12px;	letter-spacing: 2.25px;
+  }
+
+  .form{
+    width: 335px;
+  }
+  .form2{
+    width: 335px;
+  }
+
+  .sendbutton{
+    width: 335px;
+
+
+  }
+
+  .sendbutton p{
+    font-size: 12px;	letter-spacing: 2.25px;
+  }
+
+
+}

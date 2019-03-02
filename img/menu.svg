@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="11px" viewBox="0 0 21 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="About_resp" transform="translate(-337.000000, -25.000000)" stroke="#000000">
+            <g id="Group" transform="translate(338.000000, 25.000000)">
+                <path d="M11.5,-2 L11.5,13" id="Line-4" transform="translate(11.500000, 5.500000) rotate(90.000000) translate(-11.500000, -5.500000) "></path>
+                <path d="M7.5,3 L7.5,18" id="Line-4-Copy-2" transform="translate(7.500000, 10.500000) rotate(90.000000) translate(-7.500000, -10.500000) "></path>
+                <path d="M7.5,-7 L7.5,8" id="Line-4-Copy" transform="translate(7.500000, 0.500000) rotate(90.000000) translate(-7.500000, -0.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

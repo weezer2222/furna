@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="42px" viewBox="0 0 38 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 14 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="About" transform="translate(-29.000000, -16.000000)" stroke-width="3">
+            <g id="Group-14-Copy-2" transform="translate(31.000000, 18.000000)">
+                <path d="M22.8126875,17.1875 L11.5626875,22.8125" id="Stroke-1" stroke="#231916"></path>
+                <g id="Group-10" transform="translate(0.000000, 0.312500)">
+                    <path d="M11.5626875,11.25 L34.0626875,0" id="Stroke-2" stroke="#9A7D41" stroke-linecap="round"></path>
+                    <path d="M22.8126875,16.875 L34.0626875,22.5" id="Stroke-4" stroke="#231916" stroke-linecap="round"></path>
+                    <path d="M34.0626875,39.375 L34.0626875,22.5" id="Stroke-6" stroke="#231916"></path>
+                    <path d="M11.5626875,16.875 L0.3126875,11.25" id="Stroke-8" stroke="#9A7D41" stroke-linecap="round"></path>
+                </g>
+                <polygon id="Stroke-11" stroke="#9A7D41" stroke-linecap="square" points="11.5626875 14.375 11.5626875 17.1875 11.5626875 14.375 11.5626875 11.5625"></polygon>
+                <path d="M11.5626875,17.1875 L11.5626875,39.6875" id="Stroke-12" stroke="#987B40"></path>
+            </g>
+        </g>
+    </g>
+</svg>
