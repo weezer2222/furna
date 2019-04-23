@@ -28,7 +28,8 @@ $(function(){
 
         //JSでCSSを操作　マウスのスクロール中
         $(window).on('mousewheel',function(evt) {
-            evt.preventDefault(); //画面が動かないようにイベントを停止
+            // evt.preventDefault(); 
+            //画面が動かないようにイベントを停止
 
             //Z座標が動く範囲
             if(posZ > -21000 && posZ <= -2000){
@@ -49,7 +50,7 @@ $(function(){
                 if(posZ > -2100){
                   $('.brandlogo_top').fadeIn(1200);
                   $('.brandname_top').animate({'top':'60px'},1200);
-                  $('.scroll').animate({'bottom':'-100px'},2000);
+                  $('.scroll').fadeOut(1200);
                   $('.sidemenultext_top').animate({'left':'67px'},1200);
                   $('.sidemenul_top_hr').animate({'left':'50px'},1200);
                   $('.sidemenurtext_top').animate({'right':'57px'},1200);

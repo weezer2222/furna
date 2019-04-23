@@ -28,6 +28,8 @@ a {
   color: #000;
 }
 
+
+
 .brandlogo:hover {
   opacity: 0.7;
 }
@@ -611,7 +613,7 @@ header nav ul{
   header nav{
     width: 100%;
     height: 100vh;
-    background-color: #F5F1EA;
+    background-color: #fff;
     position: fixed;
     left: 0;
     top: 0;
@@ -661,10 +663,11 @@ header nav ul{
     border-bottom: none;
   }
 
-  a:hover, a:active{
+  /* a:hover, a:active{
     text-decoration: none;
   	opacity: 0.7;
-  }
+  } */
+
 
   .brandname h1{
     margin-bottom: 18px;
@@ -696,6 +699,80 @@ header nav ul{
 
   .mobilebrandname_top h1{
     	font-family: Vollkorn;	font-size: 20px;	letter-spacing: 3.75px;
+  }
+
+  /* ホバーアニメーション */
+    .snip1217 {
+    /* font-family: 'Raleway', Arial, sans-serif; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* font-weight: 500; */
+    /* letter-spacing: 1px; */
+  }
+  .snip1217 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1217 li {
+    display: inline-block;
+    list-style: outside none none;
+    /* margin: 0.5em 1.5em; */
+    /* padding: 0; */
+  }
+  .snip1217 a {
+    /* padding: 0.3em 0; */
+    /* color: rgba(255, 255, 255, 0.5); */
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  /* .snip1217 a:before,
+  .snip1217 a:after {
+    height: 1px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #000;
+    width: 0;
+  } */
+
+
+
+  .snip1217 a:before {
+    top: 0;
+    left: 0;
+  }
+  .snip1217 a:after {
+    bottom: 0;
+    right: 0;
+  }
+  .snip1217 a:hover,
+  .snip1217 .current a {
+    color: #000;
+  }
+
+  .snip1217 a:hover
+  {
+    color: #9e7f41;
+  }
+
+
+
+  .snip1217 a:hover:before,
+  .snip1217 a:hover:after{
+    width: 100%;
+  }
+
+  .snip1217 .current a {
+    color: #9e7f41;
+  }
+
+  .snip1217 .current a:before,
+  .snip1217 .current a:after {
+    width: 0%;
   }
 
 
@@ -862,8 +939,11 @@ video{
   position: absolute;
   z-index: -1;
   margin-top: 270px;
-  margin-left: 300px;
-  max-width: 1150px;
+  /* margin-left: 300px;
+  margin-right: 500px; */
+  /* margin: 270px 100px 0px 100px; */
+  margin-left: calc(3 / 10 * 100%) ;
+
 }
 
 .brandconcept{
@@ -872,6 +952,7 @@ video{
   /* margin-right: 145px; */
   /* width: 1150px; */
   max-width: 1150px;
+
 
 }
 
@@ -906,23 +987,27 @@ video{
 }
 
 .ourphilosophybg{
-  width: 790px;
+  width: 383px;
   height: 550px;
   background-color: #F5F1EA;
   position: absolute;
   z-index: -1;
   margin-top: 270px;
-  margin-left: 850px;
+  /* margin-left: 850px; */
+  margin-left: calc(5 / 10 * 100%) ;
+
 }
 
 .ourphilosophybg2{
-  width: 750px;
-  height: 445px;
+  width: 550px;
+  height: 350px;
   background-color: #E7DDCC;
   position: absolute;
   z-index: -1;
-  margin-top: 660px;
-  margin-left: 280px;
+  margin-top: 700px;
+  /* margin-left: 280px; */
+  margin-left: calc(3 / 10 * 100%) ;
+
 }
 
 .ourphilosophy{
@@ -983,7 +1068,9 @@ video{
   position: absolute;
   z-index: -1;
   margin-top: 275px;
-  margin-left: 570px;
+  /* margin-left: 570px; */
+  margin-left: calc(4.5 / 10 * 100%) ;
+
 }
 
 .designstory{
@@ -1598,13 +1685,15 @@ footer p{
 
 
 .productbg3{
-  width: 849px;
+  width: 575px;
   height: 452px;
   background-color: #F5F1EA;
   position: absolute;
   z-index: -1;
   margin-top: 377px;
-  margin-left: 590px;
+  /* margin-left: 590px; */
+  margin-left: calc(4 / 10 * 100%) ;
+
 }
 
 .productbg4{
@@ -1614,7 +1703,9 @@ footer p{
   position: absolute;
   z-index: -1;
   margin-top: 1170px;
-  margin-left: 300px;
+  /* margin-left: 300px; */
+  margin-left: calc(3 / 10 * 100%) ;
+
 }
 
 .productinfo_resp{
