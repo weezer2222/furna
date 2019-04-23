@@ -28,7 +28,7 @@ $(function(){
 
         //JSでCSSを操作　マウスのスクロール中
         $(window).on('mousewheel',function(evt) {
-            // evt.preventDefault(); 
+            // evt.preventDefault();
             //画面が動かないようにイベントを停止
 
             //Z座標が動く範囲

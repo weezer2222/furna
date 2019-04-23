@@ -790,7 +790,9 @@ header nav ul{
   background-color: #F5F1EA;
 } */
 
-
+.respvideo{
+  display: none;
+}
 
 .video{
   position: absolute;
@@ -798,14 +800,9 @@ header nav ul{
   height: 100vh;
   overflow: hidden;
   perspective: 4000px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: translate3d(0, -50px, 0); */
-  /* margin:50px 100px 100px 0px; */
-  /* padding:100px 100px 100px 100px; */
-
 }
 
 video{
@@ -840,32 +837,46 @@ video{
     display: none;
   }
 
-  .video{
+  .webvideo{
+    display: none;
+  }
+
+  .respvideo{
+    display: block;
+  }
+
+  .video2{
     padding-top: 0px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
+    /* position: relative; */
     padding-bottom: 0;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: -webkit-box;
-  display: -ms-flexbox; */
     transform: translateY(-50px);
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    perspective: 60000px;
   }
 
   .video video{
-    width: 335px;
+    /* width: 335px; */
     display: block;
 
   }
 
-  .scroll p{
+  /* .scroll p{
     font-size: 10px;
     top: calc(50%);
+  } */
+
+  .beforeopen_top{
+    display: block;
+    width: 100%;
+    height: 60px;
+    /* background-color: #FDD007; */
   }
 }
 
@@ -1359,7 +1370,7 @@ footer p{
   }
 
   .ourphilosophybg{
-    width: 300px;
+    width: 250px;
     height: 220px;
     margin-top: 70px;
     margin-left: 100px;
@@ -1373,9 +1384,9 @@ footer p{
   }
 
   .designstorybg{
-    width: 1000px;
+    width: 250px;
     height: 420px;
-    margin-left: 130px;
+    margin-left: 100px;
     margin-top: 170px
   }
 
@@ -1402,8 +1413,9 @@ footer p{
 
 
 .productmain{
+  position: relative;
   display: flex;
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto 0;
 }
 
@@ -1728,6 +1740,7 @@ footer p{
 
   .productmain{
     display: block;
+    max-width: 767px;
     max-width: 335px;
     margin-left: 20px;
     margin-right: 20px;
@@ -1874,7 +1887,7 @@ footer p{
   }
 
   .productbg{
-    width: 450px;
+    width: 250px;
     height: 608px;
     background-color: #E7DDCC;
     position: absolute;
@@ -1882,29 +1895,31 @@ footer p{
     margin-left: 100px;
     margin-top: 80px;
     height: 200px;
-    display: block;
+    display: none;
   }
 
   .productbg2{
     width: 350px;
     height: 280px;
-    /* margin-right: 200px; */
     margin-top: 580px;
     background-color: #F5F1EA;
     position: absolute;
     z-index: -2;
     margin-left: 0px;
-    display: block;
+    display: none;
 
   }
 
 
   .productbg3{
+    display: none;
+    width: 250px;
     margin-left: 100px;
     height: 400px;
   }
 
   .productbg4{
+    display: none;
     width: 300px;
     height: 500px;
     margin-top: 1280px;
