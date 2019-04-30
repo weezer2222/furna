@@ -1,0 +1,6 @@
+body{
+  background-color: #fff;
+  /* ビデオ固定のため */
+  overflow: hidden;
+
+}
