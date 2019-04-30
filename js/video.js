@@ -28,8 +28,8 @@ $(function(){
 
         //JSでCSSを操作　マウスのスクロール中
         $(window).on('mousewheel',function(evt) {
-            // evt.preventDefault();
-            //画面が動かないようにイベントを停止
+          // evt.preventDefault();
+          //画面が動かないようにイベントを停止
 
             //Z座標が動く範囲
             if(posZ > -21000 && posZ <= -2000){
@@ -63,4 +63,5 @@ $(function(){
                 }
             }
         });
+
 	});
